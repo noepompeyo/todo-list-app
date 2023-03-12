@@ -1,8 +1,17 @@
+import React from "react";
+import AppUI from "./AppUI";
+import { TodoProvider } from "./components/TodoContext";
+
 
 
 export default function App() {
-  const titulo = "hola mundo de nuevo";
+
+
+
   return (
-    <div>{titulo}</div>
-  )
+    <TodoProvider>
+
+      <AppUI />
+    </TodoProvider>
+  );
 }
